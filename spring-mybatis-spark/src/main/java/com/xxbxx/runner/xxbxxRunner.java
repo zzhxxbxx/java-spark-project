@@ -19,9 +19,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 /**
- * @Auther: Administrator
+ * @Auther: xxbxx
  * @Date: 2019/7/1 13:49
- * @Description:
+ * @Description:    spring中无法创建多个main方法，所以调用CommandLineRunner的不同实现
  */
 public class xxbxxRunner implements CommandLineRunner, Serializable {
 

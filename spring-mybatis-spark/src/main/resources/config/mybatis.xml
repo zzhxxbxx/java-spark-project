@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+      <typeAlias alias="RolePermission" type="com.fenji.read.smc.entity.RolePermission"/>
+      <typeAlias alias="UserBasic" type="com.fenji.read.smc.entity.UserBasic"/>
+      <typeAlias alias="UserRoleRela" type="com.fenji.read.smc.entity.UserRoleRela"/>
+      <typeAlias alias="School" type="com.fenji.read.smc.entity.School"/>
+      <typeAlias alias="User" type="com.fenji.read.smc.entity.User"/>
+    </typeAliases>
+</configuration>

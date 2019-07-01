@@ -1,0 +1,12 @@
+##端口
+#server:
+#  port: 8082
+#  servlet:
+#    context-path: /smc
+
+spring:
+  application:
+    name: fenji-read-sync
+  profiles:
+    active: '@profileActive@'
+

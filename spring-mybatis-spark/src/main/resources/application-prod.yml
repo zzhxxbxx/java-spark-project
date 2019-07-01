@@ -1,0 +1,110 @@
+
+source1:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://172.21.16.33:3306/fj_prod_main?useSSL=false
+    username: root
+    password: Fenji@1314
+    driverClassName: com.mysql.jdbc.Driver
+    initialSize: 50
+    minIdle: 50
+    maxActive: 500
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+source2:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://172.21.16.49:3306/fj_prod_data?useSSL=false
+    username: root
+    password: Fenji@1314
+    driverClassName: com.mysql.jdbc.Driver
+    initialSize: 50
+    minIdle: 50
+    maxActive: 500
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+source3:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://172.21.16.38:3306/fj_prod_stats?useSSL=false
+    username: root
+    password: Fenji@1314
+    driverClassName: com.mysql.jdbc.Driver
+    initialSize: 50
+    minIdle: 50
+    maxActive: 500
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+source4:
+   datasource:
+     type: com.alibaba.druid.pool.DruidDataSource
+     url: jdbc:mysql://172.21.16.38:3306/prod_fenji_read_ecs?useSSL=false
+     username: root
+     password: Fenji@1314
+     driverClassName: com.mysql.jdbc.Driver
+     initialSize: 50
+     minIdle: 50
+     maxActive: 500
+     maxWait: 60000
+     timeBetweenEvictionRunsMillis: 60000
+     minEvictableIdleTimeMillis: 300000
+     validationQuery: SELECT 1 FROM DUAL
+     testWhileIdle: true
+     testOnBorrow: false
+     testOnReturn: false
+     poolPreparedStatements: true
+     maxPoolPreparedStatementPerConnectionSize: 20
+     filters: stat,wall,log4j
+     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+#日志显示SQL
+logging:
+       level:
+         root: warn
+         com:
+           fenji:
+             read:
+               sync:
+                 mapper: debug
+#
+# redis 生产配置
+private:
+  redis:
+    host: 172.21.16.44
+    password: crs-s1z5qm92:fenji@sql123
+    port: 6379
+  #表名配置
+  hbase:
+    crowdStats: prod_crowd_stats
+
+

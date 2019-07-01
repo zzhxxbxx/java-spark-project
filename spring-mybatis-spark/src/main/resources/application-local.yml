@@ -116,3 +116,5 @@ private:
   #表名配置
   hbase:
     crowdStats: dev_crowd_stats
+  spark:
+    master: local[2]

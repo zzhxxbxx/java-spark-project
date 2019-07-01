@@ -1,9 +1,9 @@
 package com.xxbxx.entities;
 
 /**
- * @Auther: Administrator
+ * @Auther: xxbxx
  * @Date: 2019/7/1 17:37
- * @Description:
+ * @Description:    与数据库中的表一一对应
  */
 public class User {
 }

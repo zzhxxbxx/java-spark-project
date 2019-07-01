@@ -6,7 +6,7 @@
 
 spring:
   application:
-    name: fenji-read-sync
+    name: xxbxx
   profiles:
     active: '@profileActive@'
 
